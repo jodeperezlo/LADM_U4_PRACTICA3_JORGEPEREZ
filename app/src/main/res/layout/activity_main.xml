@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="REGISTRAR ALUMNO"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="NÚMERO DE CONTROL (8 DÍGITOS)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="NOMBRE DEL ALUMNO"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtUnidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="UNIDAD (SÓLO UN NÚMERO DEL 1-8)" />
+
+    <EditText
+        android:id="@+id/txtCalificacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:ems="10"
+        android:hint="CALIFICACIÓN DEL 0-100"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:layout_marginTop="5dp"
+        android:background="#A6E161"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#686464"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BORRAR DATOS"
+        android:layout_marginTop="5dp"
+        android:background="#A6E161"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#686464"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblUltimo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:text=" VER ÚLTIMO MENSAJE RECIBIDO" />
+
+    <TextView
+        android:id="@+id/lblCalif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CALIFICACIONES REGISTRADAS:"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/listaRegistros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
